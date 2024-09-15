@@ -104,10 +104,16 @@
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email" required>
 
-      <button type="submit">Inscrever-se</button>
+      <button type="submit" onclick="abrirForm()">Inscrever-se</button>
     </form>
     <p style="text-align: center;" id="mensagem-sucesso"></p>
   </section>
+
+  <script>
+    function abrirForm(){
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSd2WALLfMTysuvf95Qszk73zILzitew0BFrw7jgDolN2b5hvw/viewform', 'blank')
+    }    
+  </script>
 
   <footer>
     <p>&copy; 2024 Página criada por Fabrício Kolk. Todos os direitos reservados.</p>
