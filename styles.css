@@ -1,21 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #1e1e1e;
-    color: #e5e5e5;
-  }
-  
-  header {
-    background-color: #121212;
-    color: #4a90e2;
-    padding: 20px 0;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #1e1e1e;
+  color: #e5e5e5;
+}
+
+header {
+  background-color: #121212;
+  color: #4a90e2;
+  padding: 20px 0;
+  text-align: center;
 }
 
 h1 {
@@ -33,6 +33,14 @@ h2 {
   text-align: center;
 }
 
+#localizacao, #descricao-evento, #quem-deve-ir, #porque-ir > p {
+  text-align: center;
+}
+
+#organizadores p {
+  text-align: center;
+}
+
 p, ul {
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -40,7 +48,9 @@ p, ul {
 
 #imagem-evento {
   text-align: center;
+  margin: auto;
   margin-bottom: 40px;
+  width: 80%;
 }
 
 #imagem-evento img {
@@ -92,39 +102,42 @@ footer {
 }
 
 #form-inscricao {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;  /* Limita a largura máxima do formulário */
-    margin: 0 auto;    /* Centraliza o formulário horizontalmente */
-  }
-  
-  #form-inscricao label, #form-inscricao input {
-    margin-bottom: 10px;
-  }
-  
-  #form-inscricao input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #4a90e2;
-    background-color: #2c2c2c;
-    color: #e5e5e5;
-  }
-  
-  button {
-    background-color: #4a90e2;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;   /* Botão ocupa 100% da largura do formulário */
-  }
-  
-  button:hover {
-    background-color: #357ab8;
-  }
-  
-  #mensagem-sucesso {
-    color: #4a90e2;
-    margin-top: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  /* Limita a largura máxima do formulário */
+  margin: 0 auto;
+  /* Centraliza o formulário horizontalmente */
+}
+
+#form-inscricao label,#form-inscricao input {
+  margin-bottom: 10px;
+}
+
+#form-inscricao input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4a90e2;
+  background-color: #2c2c2c;
+  color: #e5e5e5;
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  /* Botão ocupa 100% da largura do formulário */
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+#mensagem-sucesso {
+  color: #4a90e2;
+  margin-top: 20px;
+}
