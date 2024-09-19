@@ -35,6 +35,8 @@ h2 {
 
 #localizacao, #descricao-evento, #quem-deve-ir, #porque-ir > p {
   text-align: center;
+  max-width: 100%;
+  margin: auto;
 }
 
 #organizadores p {
@@ -46,7 +48,10 @@ p, ul {
   margin-bottom: 20px;
 }
 
+
 #imagem-evento {
+  max-width: 60%;
+  margin: auto;
   display: flex;
   justify-content: center; 
   align-items: center;    
