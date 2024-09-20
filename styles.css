@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,28 +13,23 @@ body {
   color: #e5e5e5;
 }
 
-/* header {
-  background-color: #121212;
-  color: #4a90e2;
-  padding: 20px 0;
-  text-align: center;
-} */
-
 header {
-  background-color: #1a1a1a; /* Slightly lighter shade */
   color: #4a90e2;
-  padding: 30px 0; /* Increased padding */
+  padding: 0; /* Increased padding */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   border-bottom: 2px solid #4a90e2; /* Border at the bottom */
 }
 
-h1 {
-  font-size: 3em;
-}
-
 section {
   padding: 40px 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center; /* Center the text */
+  font-size: 2em; /* Default font size */
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -72,30 +69,79 @@ h2 {
   }
 }
 
-
-#localizacao, #descricao-evento, #quem-deve-ir, #porque-ir > p {
+.descricao {
   text-align: center;
-  /* max-width: 100%; */
-  margin: auto;
+  margin: 20px 0; /* Add vertical space between text blocks */
+  color: #ffffff; /* Dark grey text */
+  padding: 10px 0; /* Add some padding inside the text block */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  border-bottom: 1px solid rgba(74, 144, 226, 0.5); /* 50% opacity */
 }
 
-#organizadores p {
+#organizadores {
+  font-size:0.9em;
+  padding: 40px 20px;
+}
+
+#organizadores h2 {
+  font-size: 2.5em; /* Increase the font size of the heading */
+  margin-bottom: 20px;
   text-align: center;
+}
+
+#organizadores ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#organizadores ul li {
+  background-color: #2c2c2c;
+  padding: 15px; /* Increase padding for better spacing */
+  margin-bottom: 15px; /* Increase margin for better spacing */
+  border-radius: 5px;
+  font-size: 1.2em; /* Increase font size for the organizers' names */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#organizadores ul li a img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 10px; /* Add some space between the name and the icon */
+}
+
+
+#fale-conosco {
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add some padding for better spacing */
+  margin: 20px 0; /* Add vertical margin for separation */
+}
+
+#fale-conosco p {
+  margin-bottom: 10px; /* Add some space between paragraphs */
+}
+
+#fale-conosco a {
+  color: #4a90e2; /* Ensure the link color matches your theme */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+#fale-conosco a:hover {
+  text-decoration: underline; /* Add underline on hover for better UX */
 }
 
 p, ul {
-  font-size: 1.2em;
   margin-bottom: 20px;
 }
 
-
 #imagem-evento {
-  /* max-width: 100%; */
   margin: auto;
+  padding: 3%;
   display: flex;
   justify-content: center; 
   align-items: center;    
-  margin-bottom: 40px;
   width: 100%;
   height: 100%;       
 }
@@ -146,28 +192,17 @@ a {
 }
 
 footer {
-  background-color: #1a1a1a; /* Slightly lighter shade */
   color: #e5e5e5;
   padding: 30px 0; /* Increased padding */
   text-align: center;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   border-top: 2px solid #4a90e2; /* Border at the top */
 }
-/* 
-footer {
-  background-color: #121212;
-  color: #e5e5e5;
-  padding: 20px;
-  text-align: center;
-} */
 
 #form-inscricao {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  /* Limita a largura máxima do formulário */
   margin: 0 auto;
-  /* Centraliza o formulário horizontalmente */
 }
 
 #form-inscricao label,#form-inscricao input {
@@ -181,27 +216,285 @@ footer {
   background-color: #2c2c2c;
   color: #e5e5e5;
 }
-
 button {
   background-color: #4a90e2;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 30px; /* Increase padding for a bigger button */
   cursor: pointer;
   border-radius: 5px;
-  width: 100%;
-  /* Botão ocupa 100% da largura do formulário */
+  width: 100%; /* Button occupies 100% of the form width */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 button:hover {
-  background-color: #357ab8;
+  background-color: #357ABD; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+footer {
+  color: #e5e5e5; /* Ensure the text color matches your theme */
+  padding: 5%; /* Reduce padding for a smaller footer */
+  padding-bottom: 5%;
+  text-align: center; /* Center the text */
+  font-size: 0.5em; /* Make the text smaller */
 }
 
-#mensagem-sucesso {
-  color: #4a90e2;
-  margin-top: 20px;
+footer p {
+  margin: 0; /* Remove default margin */
 }
 
-#fale-conosco{
+
+
+/* Media Queries for responsiveness */
+@media (min-width: 300px) {
+  body {
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Adjust font size for small screens */
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  ul {
+    padding-left: 40px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+  button {
+    font-size: 1em; /* Adjust font size for small screens */
+  }
+  #fale-conosco {
+    font-size: 0.5em;
+  }
+  #organizadores {
+    font-size: .6em;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust font size for medium screens */
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  ul {
+    padding-left: 40px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+  button {
+    font-size: 1.2em; /* Adjust font size for medium screens */
+    }
+  #fale-conosco {
+    font-size: 0.5em;
+  }
+  #organizadores {
+    font-size: .6em;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 2.5em; /* Adjust font size for large screens */
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  ul {
+    padding-left: 60px;
+  }
+
+  p {
+    font-size: 1.8em;
+  }
+  button {
+    font-size: 1.5em; /* Adjust font size for large screens */
+    }
+  #fale-conosco {
+    font-size: 0.5em;
+  }
+  #organizadores {
+    font-size: 1.em;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 3em; /* Adjust font size for extra large screens */
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  ul {
+    padding-left: 80px;
+  }
+
+  p {
+    font-size: 2.5em;
+  }
+  button {
+    font-size: 2em; /* Adjust font size for extra large screens */
+    }
+  #fale-conosco {
+    font-size: 0.6em;
+  }
+  #organizadores {
+    font-size: 1.9em;
+  }
+}
+
+#organizadores {
+  padding: 40px 20px;
   text-align: center;
+}
+
+#organizadores h2 {
+  font-size: 2.5em; /* Increase the font size of the heading */
+  margin-bottom: 20px;
+}
+
+.organizadores-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add space between items */
+}
+
+.organizador {
+  background-color: #2c2c2c;
+  padding: 15px;
+  border-radius: 5px;
+  width: calc(50% - 20px); /* Two items per row with space between */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.organizador p {
+  font-size: 1.2em; /* Increase font size for the organizers' names */
+  margin-bottom: 10px;
+}
+
+.organizador a img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+#organizadores ul li {
+  background-color: #2c2c2c;
+  padding: 15px; /* Keep padding for better spacing */
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  gap: 10px; /* Add some space between the icon and text */
+}
+
+#organizadores ul li a img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 0; /* Remove extra margin to bring the icon closer */
+  margin-right: 10px; /* Optional: add space between the icon and the text */
+}
+
+#organizadores ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the list items */
+}
+
+#organizadores ul li {
+  background-color: #2c2c2c;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  max-width: 600px; /* Set a maximum width for the items */
+  width: 100%; /* Keep the item width relative within the max width */
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+#organizadores ul li a img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.organizadores-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Centers items in the middle */
+}
+
+.organizador {
+  background-color: #2c2c2c;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: calc(50% - 20px); /* Ensures each item takes up half of the container */
+  box-sizing: border-box; /* Includes padding and borders in width calculations */
+  margin-bottom: 20px; /* Optional: adds spacing between rows */
 }

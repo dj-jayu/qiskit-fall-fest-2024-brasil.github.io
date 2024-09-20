@@ -8,56 +8,54 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
+
+<header>
+  <section id="imagem-evento">
+    <picture>
+      <source srcset="image-desktop.png" media="(min-width: 768px)">
+      <source srcset="image-mobile.png" media="(max-width: 767px)">
+      <img src="image-desktop.png" alt="Qiskit Fall Fest logo">
+    </picture>
+  </section>
+</header>
 <body>
   <div class="margin">
-  <header>
-    <h1>Qiskit Fall Fest 2024 - Brasil</h1>
-    <p style="color: white;">Data: <strong>18-23 </strong>de Novembro de 2024</p>
-  </header>
-
   <!-- Nova seção de imagem -->
-  <section id="imagem-evento">
-    <img src="Qiskit_Fall-Fest_Wallpaper-01.jpg" alt="Imagem do evento de computação quântica">
+  
+  <!-- <header>
+    
+  </header> -->
+
+  <section class="descricao">
+    <p>A edição brasileira do Qiskit Fall Fest 2024 será totalmente online e gratuita.</p>
   </section>
 
-  <section id="descricao-evento">
-    <h2>Sobre o Evento</h2>
-    <p>O evento de Computação Quântica reunirá especialistas de diversas áreas para discutir os avanços e as novas
-      oportunidades dessa tecnologia revolucionária.</p>
-  </section>
-
-  <section id="quem-deve-ir">
-    <h2>Quem deve ir no evento?</h2>
-    <p>O evento é ideal para estudantes, profissionais de TI, entusiastas de ciência, e qualquer pessoa interessada em
+  <section class="descricao">
+    <p>Para estudantes, profissionais de TI, entusiastas de ciência, e interessados em
       explorar o futuro da computação quântica.</p>
   </section>
 
-  <section id="porque-ir">
-    <h2>Por que ir no evento?</h2>
-    <p>Esse evento oferece uma oportunidade única para aprender com especialistas renomados, entender as implicações
-      práticas da computação quântica e expandir seus horizontes tecnológicos.</p>
+  <section class="descricao">
+    <p>Aprenda computação quântica e sua relação com a
+      inteligência artificial.</p>
   </section>
 
-  <section id="beneficios">
-    <h2>Benefícios de participar</h2>
-    <ul>
-      <li><strong>Networking:</strong> Conecte-se com especialistas e profissionais da área.</li>
-      <li><strong>Novas Habilidades:</strong> Aprenda o que é a computação quântica, sua relação com machine learning e
-        inteligência artificial.</li>
-      <li><strong>Diversão:</strong> Experimente um evento dinâmico e envolvente, com palestras e atividades interativas
-        de programação de computadores quânticos.</li>
-      <li><strong>Certificado de participação: </strong> Um certificado para compor o seu currículo e comprovar a sua
-        participação no evento! </li>
-      <li><strong>Sorteio de brindes exclusivos: </strong>Brindes exclusivos da IBM e do evento, mediante sorteio!</li>
-    </ul>
+  <section class="descricao"">
+    <p>Palestras e atividades interativas
+      de programação de computadores quânticos.</p>
   </section>
 
-  <section id="localizacao">
+  <section class="descricao"">
+    <p></strong> Certificado para compor o seu currículo e comprovar a sua
+      participação.</p>
+  </section>
+
+  <!-- <section id="localizacao">
     <h2>Localização do Evento</h2>
     <p>O evento será realizado online, permitindo que pessoas de qualquer lugar do mundo participem. O link de acesso
       será enviado por e-mail após a inscrição.</p>
-  </section>
-
+  </section> -->
+<!-- 
   <section id="palestrantes">
     <h2>Palestrantes</h2>
     <div class="palestrante-card">
@@ -90,63 +88,42 @@
           e é autor de vários estudos de impacto no setor.</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="formulario-inscricao">
-    <h2>Inscreva-se Agora</h2>
     <form id="form-inscricao">
       <button type="submit" onclick="abrirForm()">Inscrever-se</button>
     </form>
     <p style="text-align: center;" id="mensagem-sucesso"></p>
   </section>
-  
-  <section id="organizadores">
-    <div>
-      <ul>
-          <h2>Organizadores</h2>
-          <div>
-            <ul>
-              <p>Instituto Brasileiro de Tecnologias Quântica e Inovação (IBTQIn) IBM Qiskit Fall Fest 2024</p>
-              <li>Lead Organizer: Douglas Nacib Chaves Jorge
-                <a href="https://www.linkedin.com/in/douglas-j/" target="_blank">
-                  <img src="img/icons8-linkedin-480.png" alt="LinkedIn" style="width:30px; height:30px; vertical-align:middle;">
-                </a>
-              </li>
-              <li>Co-organizer: Fabrício Kolk Carvalho
-                <a href="https://www.linkedin.com/in/fabricio-kolk/" target="_blank">
-                  <img src="img/icons8-linkedin-480.png" alt="LinkedIn" style="width:30px; height:30px; vertical-align:middle;">
-                </a>
-              </li>
-              <li>Co-organizer: Wilson Oliveira da Fonseca
-                <a href="https://www.linkedin.com/in/fonsecawilsono/" target="_blank">
-                  <img src="img/icons8-linkedin-480.png" alt="LinkedIn" style="width:30px; height:30px; vertical-align:middle;">
-                </a>
-              </li>
-              <li>Co-organizer: Maria Angélica Krüger Miranda
-                <a href="https://www.linkedin.com/in/maria-angelica-kruger-miranda-4506661a3/" target="_blank">
-                  <img src="img/icons8-linkedin-480.png" alt="LinkedIn" style="width:30px; height:30px; vertical-align:middle;">
-                </a>
-              </li>
-              <li>Co-organizer: Ricardo Conde Camillo da Silva
-                <a href="https://www.linkedin.com/in/ricardo-conde-0a8595248" target="_blank">
-                  <img src="img/icons8-linkedin-480.png" alt="LinkedIn" style="width:30px; height:30px; vertical-align:middle;">
-                </a>
-              </li>
-            </ul>
-          </div>
-      </ul>
+  <div id="organizadores">
+    <h2>Organizadores</h2>
+    <div class="organizadores-container">
+      <div class="organizador">
+        <p>Douglas Jorge <a href="#"><img src="img/icons8-linkedin-480.png" alt="LinkedIn"></a></p>
+      </div>
+      <div class="organizador">
+        <p>Fabrício Kolk Carvalho <a href="#"><img src="img/icons8-linkedin-480.png" alt="LinkedIn"></a></p>
+      </div>
+      <div class="organizador">
+        <p>Wilson Oliveira da Fonseca <a href="#"><img src="img/icons8-linkedin-480.png" alt="LinkedIn"></a></p>
+      </div>
+      <div class="organizador">
+        <p>Maria Angélica Krüger Miranda <a href="#"><img src="img/icons8-linkedin-480.png" alt="LinkedIn"></a></p>
+      </div>
+      <div class="organizador">
+        <p>Ricardo Conde Camillo da Silva <a href="#"><img src="img/icons8-linkedin-480.png" alt="LinkedIn"></a></p>
+      </div>
     </div>
-  </section>
+  </div>
+  
 
   <hr>
-
-
 
   <hr>
 
   <section id="fale-conosco">
-    <h2>Fale conosco!</h2>
-    <p>Mande um e-mail para: <strong>ffestbr24@gmail.com</strong></p>
+    <p>Contato: <strong>ffestbr24@gmail.com</strong></p>
     <p><a href="privacidade.html" target="_blank">Política de privacidade</a></p>
   </section>
 
