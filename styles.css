@@ -238,7 +238,7 @@ footer {
   padding: 5%; /* Reduce padding for a smaller footer */
   padding-bottom: 5%;
   text-align: center; /* Center the text */
-  font-size: 0.5em; /* Make the text smaller */
+  font-size: 0.4em; /* Make the text smaller */
 }
 
 footer p {
@@ -334,12 +334,14 @@ footer p {
   
   .organizador p {
     margin: 0; /* Removes default margins to ensure proper alignment */
+    margin-left:.5em;
     line-height: 1.5; /* Adjusts the line height to center text better */
 }
 
 
 .linkedin {
     margin: 0; /* Adds space between the text and icon */
+    margin-left: .4em;
     width: 2.1em; /* Adjust size based on preference */
     height: auto; /* Maintains aspect ratio */
 }
@@ -392,6 +394,8 @@ footer p {
 
 .linkedin {
     margin: 0; /* Adds space between the text and icon */
+    margin-top: .5em;
+    margin-left: .4em;
     width: 2.1em; /* Adjust size based on preference */
     height: auto; /* Maintains aspect ratio */
 }
@@ -465,6 +469,8 @@ footer p {
 
 .linkedin {
     margin: 0; /* Adds space between the text and icon */
+    margin-top: .5em;
+    margin-left: .4em;
     width: 3em; /* Adjust size based on preference */
     height: auto; /* Maintains aspect ratio */
 }
@@ -535,7 +541,9 @@ footer p {
 
 .linkedin {
     margin: 0; /* Adds space between the text and icon */
-    width: 3em; /* Adjust size based on preference */
+    margin-top: .5em;
+    margin-left: .5em;
+    width: 4em; /* Adjust size based on preference */
     height: auto; /* Maintains aspect ratio */
 }
 }
