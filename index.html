@@ -8,19 +8,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-
-<header>
-  <section id="imagem-evento">
-    <picture>
-      <source srcset="image-desktop.png" media="(min-width: 768px)">
-      <source srcset="image-mobile.png" media="(max-width: 767px)">
-      <img src="image-desktop.png" alt="Qiskit Fall Fest logo">
-    </picture>
-  </section>
-  <a href="index_en.html" class="lang-switcher">EN</a>
-</header>
-
 <body>
+
+  <header>
+    <section id="imagem-evento">
+      <picture>
+        <source srcset="image-desktop.png" media="(min-width: 768px)">
+        <source srcset="image-mobile.png" media="(max-width: 767px)">
+        <img src="image-desktop.png" alt="Qiskit Fall Fest logo">
+      </picture>
+    </section>
+    <a href="index_en.html" class="lang-switcher">EN</a>
+  </header>
+
+  <main>
   <div class="margin">
 
   <section class="descricao">
@@ -88,10 +89,11 @@
   </section> -->
 
   <section id="formulario-inscricao">
+    
     <form id="form-inscricao">
       <button type="submit" onclick="abrirForm()">Inscrever-se</button>
     </form>
-    <p style="text-align: center;" id="mensagem-sucesso"></p>
+    <!-- <p style="text-align: center;" id="mensagem-sucesso"></p> -->
   </section>
 
   <div id="organizadores">
@@ -139,10 +141,18 @@
 
   <hr>
 
-  <section id="fale-conosco">
-    <p>Contato: <strong>ffestbr24@gmail.com</strong></p>
-    <p><a href="privacidade.html" target="_blank">Política de privacidade</a></p>
-  </section>
+  <div id="sponsored-div">
+    <a href="https://www.ibm.com/quantum/events/fall-fest-2024" target="_blank">
+      <img class="sponsored-img" src="sponsored_img_pt.png" alt="Sponsored Event, clique para saber mais">
+    </a>
+    <section id="fale-conosco">
+      <p>Contato: <strong>ffestbr24@gmail.com</strong></p>
+      <p><a href="privacidade.html" target="_blank">Política de privacidade</a></p>
+    </section>
+    
+  </div>
+</main>
+ 
 
   <script>
     function abrirForm() {

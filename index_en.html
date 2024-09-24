@@ -9,17 +9,20 @@
 </head>
 
 
-<header>
-  <section id="imagem-evento">
-    <picture>
-      <source srcset="image-desktop-en.png" media="(min-width: 768px)">
-      <source srcset="image-mobile-en.png" media="(max-width: 767px)">
-      <img src="image-desktop.png" alt="Qiskit Fall Fest logo">
-    </picture>
-  </section>
-  <a href="index.html" class="lang-switcher">PT</a>
-</header>
+
 <body>
+  <header>
+    <section id="imagem-evento">
+      <picture>
+        <source srcset="image-desktop-en.png" media="(min-width: 768px)">
+        <source srcset="image-mobile-en.png" media="(max-width: 767px)">
+        <img src="image-desktop.png" alt="Qiskit Fall Fest logo">
+      </picture>
+    </section>
+    <a href="index.html" class="lang-switcher">PT</a>
+  </header>
+
+  <main>
   <div class="margin">
   <!-- Nova seção de imagem -->
   
@@ -91,8 +94,9 @@
     <form id="form-inscricao">
       <button type="submit" onclick="abrirForm()">Register</button>
     </form>
-    <p style="text-align: center;" id="mensagem-sucesso"></p>
+    <!-- <p style="text-align: center;" id="mensagem-sucesso"></p> -->
   </section>
+
   <div id="organizadores">
     <h2>Event Team</h2>
     <div class="organizadores-container">
@@ -138,11 +142,18 @@
 
   <hr>
 
+  <div id="sponsored-div"></div>
+  <a href="https://www.ibm.com/quantum/events/fall-fest-2024" target="_blank">
+    <img class="sponsored-img" src="sponsored_img_en.png" alt="Sponsored Event, click to know more">
+  </a>
   <section id="fale-conosco">
     <p>Contact us: <strong>ffestbr24@gmail.com</strong></p>
     <p><a href="privacidade.html" target="_blank">Privacy Policy</a></p>
   </section>
-
+  </div>
+    
+  </div>
+  </main>
   <script>
     function abrirForm() {
       window.open('https://docs.google.com/forms/d/e/1FAIpQLSd2WALLfMTysuvf95Qszk73zILzitew0BFrw7jgDolN2b5hvw/viewform', 'blank')

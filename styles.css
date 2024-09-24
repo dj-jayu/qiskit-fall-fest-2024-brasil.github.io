@@ -137,6 +137,8 @@ p, ul {
 }
 
 #imagem-evento {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   padding: 3%;
   display: flex;
@@ -261,7 +263,19 @@ footer p {
   background-color: rgba(255, 159, 226, 0.863);
 }
 
+#sponsored-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.sponsored-img {
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+}
 
 /* Media Queries for responsiveness */
 @media (min-width: 300px) {
@@ -539,13 +553,13 @@ footer p {
     line-height: 1.5; /* Adjusts the line height to center text better */
 }
 
-.linkedin {
-    margin: 0; /* Adds space between the text and icon */
-    margin-top: .5em;
-    margin-left: .5em;
-    width: 4em; /* Adjust size based on preference */
-    height: auto; /* Maintains aspect ratio */
-}
+  .linkedin {
+      margin: 0; /* Adds space between the text and icon */
+      margin-top: .5em;
+      margin-left: .5em;
+      width: 4em; /* Adjust size based on preference */
+      height: auto; /* Maintains aspect ratio */
+  }
 }
 
 /* #organizadores {
