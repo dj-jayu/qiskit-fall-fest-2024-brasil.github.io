@@ -194,6 +194,7 @@ a {
 .palestrante-card .info-palestrante h3 {
   color: #4a90e2;
   margin-bottom: 10px;
+  line-height: 1em;
 }
 
 footer {
@@ -698,15 +699,16 @@ footer p {
     
   }
   .palestrantes h3 {
-    font-size: 3.2em;
+    font-size: 3m;
     text-align: left;
     font-style: italic;
-    margin-left: .5em;
+    margin-left: .4em;
+    margin-bottom: 0;
   }
   .palestrantes p {
     text-align: left;
     margin: 1em;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .palestrante-card {
     flex-direction: row;
@@ -780,7 +782,7 @@ footer p {
   .palestrantes p {
     text-align: left;
     margin: 1em;
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .palestrante-card {
     flex-direction: row;
