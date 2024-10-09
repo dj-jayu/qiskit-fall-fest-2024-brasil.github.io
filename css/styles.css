@@ -45,6 +45,23 @@ h2 {
   margin-right: 5%;
 }
 
+.palestrante-card {
+  /* background: radial-gradient(circle, rgb(17, 17, 16) 10%, rgb(65, 60, 49) 75%, rgb(240, 225, 91) 100%); */
+  /* background: linear-gradient(to bottom, #23283d 1%, #0f0f0f 55%);  */
+  /* background: linear-gradient(to bottom, #212530 40%, #131314 55%);  */
+  background: linear-gradient(to bottom, #252e4799 40%, #131314 70%);
+  box-shadow: inset 0 0 5px #fabc5e66;
+  /* background: linear-gradient(to bottom, #293147 40%, #131314 55%); */
+  border: 0px inset #797876;
+  /* box-shadow: inset 0 0 1px #eeb804; */
+  /* box-shadow: inset 0 0px 2px #e2be4a; */
+  /* box-shadow: 0 0 1px #ff7eb6;  */
+  /* box-shadow: 0 0 2px #be95ff; */
+}
+p {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
 .nome_palestrante_linkedin_icone img {
   opacity: 55%;
 }
@@ -488,8 +505,12 @@ footer p {
   margin: .5em;
   font-size: 2vw;
 }
+
 .palestrante-card {
   flex-direction: column;
+  border: 0px inset #8a7242;
+  /* background: linear-gradient(to bottom, #191d2999 40%, #131314 70%); */
+  box-shadow: inset 0 0 3px #ecc06866;
 }
 .palestrante-card img {
   margin-right: 0;
@@ -836,6 +857,10 @@ footer p {
   .palestrante-card {
     flex-direction: row;
     padding:1em;
+    border: 0px inset #8a7242;
+    background: linear-gradient(to right, #1b2133 10%, #131314 40%);
+    /* box-shadow: inset 0 0 5px #fabc5e66; */
+    /* box-shadow: inset 0 0 3px #ecc06866; */
   }
   .palestrante-name-photo-container {
     display: flex;
@@ -848,6 +873,7 @@ footer p {
     width: 30em;
     height: auto;
     object-fit: cover;
+    /* box-shadow: 0px 0px 5px 1px #139dd333; */
   }
   .nome_palestrante_linkedin_icone {
     display: flex;
