@@ -391,6 +391,10 @@ footer p {
   margin: 0;
 }
 
+.palestra-card a:hover{
+  color:#5ba6fc;
+}
+
 
 #ver_palestra {
   text-align:center;
@@ -1188,7 +1192,7 @@ footer p {
   
 }
 #ver_palestra a:hover{
-  color:#86b7eb;
+  color:#9e9062;
   
 }
 
