@@ -12,3 +12,44 @@ document.getElementById('form-inscricao').addEventListener('submit', function(ev
     }
   });
   
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetID = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetID);
+
+        // Scroll to the target element smoothly and center it in the viewport
+        targetElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'center'  // Align the target to the center of the screen
+        });
+
+        // Delay the addition of the highlight class slightly to ensure scrolling is complete
+        setTimeout(() => {
+            targetElement.classList.add('highlight');
+        }, 300);  // 300 milliseconds to allow the scroll animation to complete
+
+        // Remove the highlight class after 2 seconds
+        setTimeout(() => {
+            targetElement.classList.remove('highlight');
+        }, 2300);  // 300ms + 2000ms to remove highlight after 2 seconds
+    });
+});
+
+
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetID = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetID);
+
+        // Scroll to the target element smoothly
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Add to browser history using pushState
+        history.pushState(null, null, `#${targetID}`);
+    });
+});
