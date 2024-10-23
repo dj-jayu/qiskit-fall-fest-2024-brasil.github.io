@@ -399,6 +399,10 @@ footer p {
 #ver_palestra {
   text-align:center;
 }
+
+#Esquenta_pal{
+  padding-top: 1vw;
+}
 /* Media Queries for responsiveness */
 @media (min-width: 30px) {
   body {
