@@ -332,12 +332,16 @@ footer p {
 
 .palestra-card{
   padding: 2vw 3vw;
-  box-shadow: inset 0 0 0px 1px #f8f8f866;
+  box-shadow: inset 0 0 0px 0px #a8a7a0;
+  border-bottom: 1px solid #384052;
+  border-left: 7px solid #f3f4f5;
+  border-radius: 0;
   margin: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .cronograma_mobile {
@@ -368,7 +372,7 @@ footer p {
   font-size: clamp(1px, 4.5vw, 3em);
 }
 .palestra-card {
-  background: radial-gradient(circle, rgba(7, 20, 36, 0.8) 20%, #17263a 100%);
+  background: radial-gradient(circle, rgba(7, 20, 36, 1) 20%, #17263a 100%);
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -1186,32 +1190,47 @@ footer p {
 
 
 .cronograma_desktop_sabado{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  
   border-bottom: 1px solid rgba(74, 75, 80, 0.5);
   padding: 1vw 0vw;
   
 }
 .cronograma_desktop_sabado h3{
   font-size: 1.5vw;
-  padding:0 2vw;
+  background: radial-gradient(circle, rgba(7, 20, 36, 1) 20%, #17263a 100%);
+  border-radius: 5px;
+  height: 100%;
+  text-align: center;
+  padding: 3.5vw 0;
 }
 
 
 .cronograma_desktop_sabado .palestra-card {
-  margin: .3vw;
+  margin: .2vw;
+  border-radius: 5px;
+  height: 100%;
 }
 
 .cronograma_desktop_sabado .palestra-card h5 {
-  font-size: 1.2rem; /* Smaller heading for talks */
+  font-size: 1.4rem; /* Smaller heading for talks */
   margin-bottom: .5rem;
 
 } 
 .cronograma_desktop h3 {
   text-align: center;
-  font-size: 1.2vw; /* Smaller heading for talks */
-  margin-bottom: .5rem;
+  font-size: 1.3vw; /* Smaller heading for talks */
+  margin-bottom: 0rem;
+  box-shadow: inset 0 0 0px 0px #d5dadf66;
+  border-bottom: 1px solid #384052;;
+  padding: 1vw;
+  border-radius: 0px;
+  background: radial-gradient(circle, rgba(7, 20, 36, 1) 20%, #17263a 100%);
+  border-top: 1px solid #f3f4f5;
+  border-left: 4px solid #f3f4f5;
+  border-right: 0px solid #f3f4f5;
 }
 
 .cronograma_desktop_sabado .palestra-card p {
@@ -1224,23 +1243,38 @@ footer p {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 7 equal columns */
   grid-template-rows: .1fr 1fr 1fr 1fr; /* 3 rows that auto-adjust their height based on content */
-  gap: 10px; /* Space between the grid items */
+  gap: 0px 0px; /* Space between the grid items */
   grid-auto-flow: column;
   border-bottom: 1px solid rgba(74, 75, 80, 0.5);
-  padding: 1vw 0vw;
+  padding: 0vw 0vw;
+  padding-top: 0vw;
+  margin-top: 1vw;
+  /* background: linear-gradient(to bottom, #afbcc2, #3a5875, #31363a); */
+  border-radius: 0px;
+  border-bottom: 1px solid #f3f4f5;
+  border-right: 1px solid #f3f4f5;
+
 }
 /* Each day block */
 
+.cronograma_desktop_sabado.less_padding {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
 .less_padding .palestra-card{
   padding: 2vw .5vw;
-  margin:.1vw;
+  margin:.2vw;
+  border-radius: 5px;
 }
 #less_padding_h3 {
-  padding: 2vw 2vw;
+  padding: 4.5vw 2vw;
   font-size: 1.8vw;
+  border-radius: 5px;
 }
 .cronograma_desktop .palestra-card h5 {
-  font-size: 1.2rem; /* Smaller heading for talks */
+  font-size: 1.3rem; /* Smaller heading for talks */
   margin-bottom: .5rem;
 
 }
@@ -1253,6 +1287,9 @@ footer p {
   min-height: 200px; /* You can adjust this to control the minimum height */
   padding: 0vw .5vw;
   margin:0;
+  border-radius: 0px;
+  border-right: 1px solid #384052;
+  border-left: 4px solid #f3f4f5;
 }
 
 .cronograma_desktop .palestra-card p {
@@ -1274,6 +1311,17 @@ footer p {
 }
 #pre_evento{
   display:block;
+}
+
+.palestra-card {
+  background: radial-gradient(circle, rgba(7, 20, 36, 1) 20%, #17263a 100%);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1vw 0;
+  margin-bottom: 0;
+  border-radius: 0px;
+  
 }
   
 }
