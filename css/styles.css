@@ -1229,6 +1229,11 @@ footer p {
   margin-bottom: .5rem;
 
 } 
+.cronograma_desktop_sabado .palestra-card.smaller_h5 h5 {
+  font-size: 1.3rem; /* Smaller heading for talks */
+  margin-bottom: .5rem;
+
+} 
 .cronograma_desktop h3 {
   border-top: 1px solid #384052;
   text-align: center;
