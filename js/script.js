@@ -39,17 +39,17 @@ document.getElementById('form-inscricao').addEventListener('submit', function(ev
 
 
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Stop the default behavior of adding # to the URL
 
-        const targetID = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetID);
+      const targetID = this.getAttribute('href').substring(1); // Get the target element ID
+      const targetElement = document.getElementById(targetID); // Find the target element
 
-        // Scroll to the target element smoothly
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Scroll smoothly to the target element
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        // Add to browser history using pushState
-        history.pushState(null, null, `#${targetID}`);
-    });
+      // Update the browser's history stack with the current page's URL (without the #)
+      history.pushState(null, null, window.location.pathname + window.location.search); 
+  });
 });
