@@ -33,7 +33,7 @@ document.getElementById('form-inscricao').addEventListener('submit', function(ev
         // Remove the highlight class after 2 seconds
         setTimeout(() => {
             targetElement.classList.remove('highlight');
-        }, 2300);  // 300ms + 2000ms to remove highlight after 2 seconds
+        }, 4000);  // 300ms + 2000ms to remove highlight after 2 seconds
     });
 });
 
