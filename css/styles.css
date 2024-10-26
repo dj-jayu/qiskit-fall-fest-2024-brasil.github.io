@@ -295,20 +295,35 @@ footer p {
   margin: 0; /* Remove default margin */
 }
 
-.lang-switcher {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.lang-switcher{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  position:absolute;
+  top: 2px;
+  right: 2px;
   text-decoration: none;
-  font-size: 16px;
-  color: #000;
-  padding: 5px 10px; /* Adds padding to make it easier to click on mobile */
+  align-items: center;
+}
+.lang-switcher p {
+  line-height: 2vw;
+  text-decoration: none;
+  font-size: clamp(16px, 3vw, 30px);
+  margin: 0;
+  padding: 0px;
+  color: #eff1f3;
+}
+.lang-switcher img{
+  width: clamp(30px, 5vw, 50px);
+  height: auto;
+ 
+
+  padding: 0px; /* Adds padding to make it easier to click on mobile */
   border-radius: 5px; /* Rounded corners */
-  background-color: rgba(255, 255, 255, 0.8); /* Slight background to improve visibility */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
-.lang-switcher:hover {
-  background-color: rgba(255, 159, 226, 0.863);
+.lang-switcher img:hover {
+  box-shadow: inset 0 0 30px 1px #d396d0;
 }
 
 #sponsored-div {
